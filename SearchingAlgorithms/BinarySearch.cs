@@ -44,11 +44,3 @@ public static class BinarySearch //The worst-case running time is O(log n).
         return A[mid] < target ? RecursiveSearch(A, target, mid + 1, right) : RecursiveSearch(A, target, left, mid - 1);
     }   
 }
-
-/*
-
-    Pseudocode for Recursive Version
-    
-    
-
-*/

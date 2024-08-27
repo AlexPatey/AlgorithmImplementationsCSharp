@@ -1,7 +1,8 @@
 ﻿using AlgorithmImplementationsCSharp.LeetCodeSolutions;
+using AlgorithmImplementationsCSharp.RandomAlgorithms;
 
-var result = RomanToInteger_13.RomanToInt("III");
+int[] array = [3, 4, 2, 1, 6, 75, 32, 12, 0];
 
-Console.WriteLine(result);
+RandomlyPermute.Permute(array);
 
 Console.ReadLine();

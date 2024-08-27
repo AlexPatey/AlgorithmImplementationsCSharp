@@ -1,8 +1,10 @@
-﻿using AlgorithmImplementationsCSharp.LeetCodeSolutions;
-using AlgorithmImplementationsCSharp.RandomAlgorithms;
+﻿using AlgorithmImplementationsCSharp.SortingAlgorithms;
 
-int[] array = [3, 4, 2, 1, 6, 75, 32, 12, 0];
+var heap = new HeapSort.Heap
+{
+    A = [16, 14, 10, 8, 7, 9, 3, 2, 4, 1]
+};
 
-RandomlyPermute.Permute(array);
+HeapSort.Sort(heap, false);
 
 Console.ReadLine();

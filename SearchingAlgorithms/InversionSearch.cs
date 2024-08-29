@@ -2,16 +2,16 @@
 
 public static class InversionSearch //Let A[0:n] be an array of n distinct numbers. If i < j and A[i] > A[j], then the pair (i, j) is called an inversion of A. This implementation is a modified merge sort, hence worst-case running time is 0(n log n)
 {
-    public static int Search(int[] values, int left, int right) //A[0:4]; 0; 4 - A[0:4]; 0; 2 - A[0:4]; 0; 1 - A[0:4]; 0; 0 - 
+    public static int Search(int[] values, int left, int right) 
     {
         if (left >= right)
         {
             return 0;
         }
         
-        var midPoint = left + (right - left) / 2; //2 - 1 - 0 - 
-        var inversionsLeft = Search(values, left, midPoint); //A[0:4]; 0; 2 - A[0:4]; 0; 1 - A[0:4]; 0; 0; (returns 0) - 
-        var inversionsRight =Search(values, midPoint + 1, right); //A[0:4]; 1; 1; 
+        var midPoint = left + (right - left) / 2; 
+        var inversionsLeft = Search(values, left, midPoint);
+        var inversionsRight =Search(values, midPoint + 1, right);
         var inversionsMerge = MergeCount(values, left, midPoint, right);
         
         return inversionsLeft + inversionsRight + inversionsMerge;

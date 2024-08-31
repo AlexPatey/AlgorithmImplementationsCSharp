@@ -19,7 +19,7 @@ public static class AddBinaryIntegers
                     isCarryOver = true;
                 }
                 else
-                {
+                {       
                     binaryIntegerSum[i + 1] = result;
                 }
             }

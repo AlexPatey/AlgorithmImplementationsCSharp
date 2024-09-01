@@ -28,7 +28,7 @@ public static class HeapSort
         }
     }
     
-    private static void BuildMaxHeap(Heap heap)
+    private static void BuildMaxHeap(Heap heap) //Creates a max heap from an unsorted array
     {
         heap.heapSize = heap.A.Length - 1;
         for (var i = (heap.A.Length - 1) / 2; i >= 0 ; i--)

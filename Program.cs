@@ -1,7 +1,7 @@
 ﻿using AlgorithmImplementationsCSharp.LeetCodeSolutions;
 using AlgorithmImplementationsCSharp.SortingAlgorithms;
 
-MergeSortedArray_88.Merge([1,2,3,0,0,0], 3, [2,5,6], 3);
+var result = SingleNumber_136.SingleNumber([4, 1, 2, 1, 2]);
 
 Console.ReadLine();
 return;
